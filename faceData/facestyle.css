@@ -1,0 +1,41 @@
+   .ServiceBox
+  {
+    float:left;
+    width:100%;
+    margin: 0 auto;
+    margin-top:0px;
+    width:400px;
+    height:500px;
+    border: 1px solid #bdbdbd;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0 0 10px #777700;
+    -webkit-box-shadow: 0 0 10px #777700;
+    box-shadow: 0 0 10px #777700;
+   }
+    
+    .standard-text{
+        height:7%; font-size: 12px; font-family:"Marlett";
+    }
+
+    .coveredImage{ 
+    position:absolute;
+    width:100%; height:100%; 
+    top:0px; left:0px;
+    }
+
+    .Eyes_Pos { position:absolute; top:120px; left:100px; }
+    .Face_Pos { position:absolute; top:130px; left:100px; }
+    .Mouth_Pos { position:absolute; top:320px; left:97px; }
+    .Hair_Pos { position:absolute; top:0px; left:65px; }
+    .Gadget_Pos { position:absolute; top:10px; left:60px; }
+    .Brows_Pos { position:absolute; top:210px; left:80px; }
+    .Eyes_Pos { position:absolute; top:220px; left:90px; }
+    .Beard_Pos { position:absolute; top:280px; left:80px;}
+    .jsonbox_style {width:80%;display:block; rows:4; cols:30}
+
+    .coveringCanvas{ 
+    width:100%; height:60%; 
+    position:absolute;
+    top:1px; left:1px;
+	}
