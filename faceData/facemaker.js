@@ -13,7 +13,7 @@
    		Brows:3,
    		Eyes:4,
    		Mouth:5,
-   		Face:6
+   		Face:8
    		},
    		min:
    		{
