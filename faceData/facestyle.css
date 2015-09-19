@@ -25,10 +25,10 @@
     }
 
     .Eyes_Pos { position:absolute; top:120px; left:100px; }
-    .Face_Pos { position:absolute; top:130px; left:100px; }
+    .Face_Pos { position:absolute; top:100px; left:70px; }
     .Mouth_Pos { position:absolute; top:320px; left:97px; }
     .Hair_Pos { position:absolute; top:0px; left:65px; }
-    .Gadget_Pos { position:absolute; top:10px; left:60px; }
+    .Gadget_Pos { position:absolute; top:10px; left:50px; }
     .Brows_Pos { position:absolute; top:210px; left:80px; }
     .Eyes_Pos { position:absolute; top:220px; left:90px; }
     .Beard_Pos { position:absolute; top:280px; left:80px;}
