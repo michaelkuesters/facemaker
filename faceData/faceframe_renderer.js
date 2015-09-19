@@ -10,6 +10,7 @@
 			document.getElementById('InnerDiv1').appendChild(create_imagetag({"id":1 ,"name":"Beard","src":"images/shim.png", "style":"Beard_Pos"}));	  					
 			document.getElementById('InnerDiv1').appendChild(create_imagetag({"id":1 ,"name":"Hair","src":"images/shim.png", "style":"Hair_Pos"}));	  
 			document.getElementById('InnerDiv1').appendChild(create_imagetag({"id":1 ,"name":"Gadget","src":"images/shim.png", "style":"Gadget_Pos"}));	  					
+			document.getElementById('InnerDiv1').appendChild(create_imagetag({"id":1 ,"name":"Headwear","src":"images/shim.png", "style":"Headwear_Pos"}));	  					
 		}
 
 		function create_imagetag(attribs)

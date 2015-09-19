@@ -7,9 +7,10 @@
    		{
    		Haircolor:4,
    		Beardcolor:4,
+         Hair:9,
    		Beard:11,
-   		Hair:9,
-   		Gadget:8,
+         Headwear:9,
+   		Gadget:2,
    		Brows:3,
    		Eyes:4,
    		Mouth:5,
@@ -19,8 +20,9 @@
    		{
    		Haircolor:0,
    		Beardcolor:0,
-   		Beard:0,
    		Hair:0,
+         Beard:0,
+         Headwear:0,
    		Gadget:0,
    		Brows:1,
    		Eyes:1,
@@ -36,22 +38,16 @@
    	Hair:new Array("black","brown","red","redbrown","white","yellow"),
 	}
 
-	var face;
-   	function reset_face()
-   	{
-   		face=
-   		{
-   		Haircolor:0,
-   		Beardcolor:0,
-   		Beard:0,
-   		Hair:0,
-   		Gadget:0,
-   		Brows:1,
-   		Eyes:1,
-   		Mouth:1,
-   		Face:1
-    	}
-   	}
+	var face={};
+ 	function reset_face()
+  	{
+   		for ( prop in limits.min ) {
+  // make sure the object has this value, and not its prototype
+            if ( limits.min.hasOwnProperty( prop ) ) {
+               face[prop] = limits.min[ prop ];
+         }
+      }
+  	}
 
    reset_face();
 
@@ -70,6 +66,12 @@
    	console.debug(face);
    }
 
+   function update_faceitem(itemType)
+   {
+      faceitem_next(itemType);
+      render_face();
+   }
+
    function prepare_face() {
 
    var basicShim="images/shim.png";
@@ -78,10 +80,17 @@
          Face:basicShim,
          Hair:basicShim,
          Gadget:basicShim,
+         Headwear:basicShim,
          Beard:basicShim
       };
 
 	imageObject.Face = 'images/basic-face/basic-face-' + face.Face + '.png';
+
+   if (face.Headwear > 0)
+      {
+         imageObject.Headwear = "images/headwear/headwear-" + face.Headwear+ ".png";
+      }
+
 
 	if (face.Hair > 0)
 		{
@@ -124,13 +133,14 @@
    {
 
    document.getElementById("Face1").src = imageObject.Face;
-   document.getElementById("Hair1").src = imageObject.Hair;
-   document.getElementById("Brows1").src = "images/brows/brows-" + face.Brows+ ".png";
    document.getElementById("Eyes1").src = "images/eyes/eyes-" + face.Eyes+ ".png";
+   document.getElementById("Brows1").src = "images/brows/brows-" + face.Brows+ ".png";
    document.getElementById("Mouth1").src = "images/mouth/mouth-" + face.Mouth+ ".png";
-   document.getElementById("Beard1").src = imageObject.Beard;
    document.getElementById("Gadget1").src = imageObject.Gadget;
-   
+   document.getElementById("Hair1").src = imageObject.Hair;
+   document.getElementById("Beard1").src = imageObject.Beard;
+   document.getElementById("Headwear1").src = imageObject.Headwear;
+
    }
 
 /*     function nextPage() {
