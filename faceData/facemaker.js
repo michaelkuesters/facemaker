@@ -7,9 +7,9 @@
    		{
    		Haircolor:4,
    		Beardcolor:4,
-         Hair:9,
-   		Beard:11,
-         Headwear:9,
+         Hair:8,
+   		Beard:12,
+         Headwear:13,
    		Gadget:2,
    		Brows:3,
    		Eyes:4,
