@@ -7,9 +7,9 @@
    		{
    		Haircolor:4,
    		Beardcolor:4,
-         Hair:8,
+         Hair:9,
    		Beard:12,
-         Headwear:18,
+         Headwear:22,
    		Gadget:2,
    		Brows:3,
    		Eyes:4,
@@ -90,7 +90,6 @@
       {
          imageObject.Headwear = "images/headwear/headwear-" + face.Headwear+ ".png";
       }
-
 
 	if (face.Hair > 0)
 		{
