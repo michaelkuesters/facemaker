@@ -9,7 +9,7 @@
    		Beardcolor:4,
          Hair:9,
    		Beard:12,
-         Headwear:22,
+         Headwear:23,
    		Gadget:2,
    		Brows:3,
    		Eyes:4,
